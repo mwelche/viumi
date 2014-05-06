@@ -19,7 +19,7 @@ $(document).ready(function() {
 						rect.right <= (window.innerWidth || document. documentElement.clientWidth) /*or $(window).width() */
 					);
 				};
-				this.inViewport = function() {
+				var inViewport = function() {
 					var index = $this.html(),
 						idIndex = '#'+index;
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
 						}
 					}
 				};
-				$(window).on('load resize scroll', this.inViewport);
+				$(window).on('load resize scroll', inViewport);
 			});
 		}
 	});
