@@ -11,6 +11,7 @@ Basic Usage
 -----------
 
 There are two parts to making this work. The first part is the element you want to detect. The second part is picking what happens when that element is detected.
+
 `$(yourElement).viumi();`
 
 jQuery is required. (that pretty much goes without saying)
